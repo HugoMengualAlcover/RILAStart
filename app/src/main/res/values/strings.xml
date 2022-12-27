@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RILAStart</string>
+    <string name="title_activity_menu_maps">MenuMapsActivity</string>
 </resources>
