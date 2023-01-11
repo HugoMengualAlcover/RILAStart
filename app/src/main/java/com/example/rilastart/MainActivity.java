@@ -1,5 +1,6 @@
 package com.example.rilastart;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,6 +11,13 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+
 public class MainActivity extends AppCompatActivity {
 
     Button btnSignUp;
@@ -17,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton btnGoogle;
     ImageButton btnApple;
     TextView lblEntrarSinCuenta;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +40,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, SignUpActivity.class));
             }
         });
-
-
-
     }
 
     private void inicializarVistas() {
@@ -43,4 +49,7 @@ public class MainActivity extends AppCompatActivity {
         btnApple = findViewById(R.id.btnAppleMain);
         lblEntrarSinCuenta = findViewById(R.id.lblEntrarSinCuentaMain);
     }
+
+
+
 }
