@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+
+    <item android:title= "">
+        <menu>
+
+            <group
+                android:id="@+id/group1"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/itemDestinosRecomendados"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:title="Destinos Recomendados"
+                    android:textAligment="center"/>
+                <item
+                    android:id="@+id/itemNovedades"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:title="Novedades"
+                    android:gravity="center"
+                    />
+                <item
+                    android:id="@+id/itemFavoritos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:title="Favoritos"
+                    android:gravity="center"
+                     />
+                <item
+                    android:id="@+id/itemMapa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:title="Mapa"
+                    android:gravity="center"
+                />
+                <item
+                    android:id="@+id/itemAyuda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:title="Ayuda"
+                    android:gravity="center"
+                     />
+            </group>
+
+        </menu>
+
+    </item>
+
+
+</menu>
